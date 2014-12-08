@@ -1,0 +1,96 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  background-color: #F5F5F1;
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-default {
+  background-color: #EFEFEB;
+}
+
+.navbar-default .navbar-brand {
+  font-family: Reeler Personal Use Only, georgia, serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+}
+
+.col-md-4:nth-child(3n+1) {
+  clear: left;
+}
+
+.col-md-6 {
+  h5 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 18px;
+    font-family: Montepetrum, Arial;
+  }
+}
+
+.jumbotron {
+	background-image: asset-data-url("gigs.jpg");
+	h1 {
+		font-family: Reeler Personal Use Only, Helvetica;
+		color:white;
+    font-size: 4.3em;
+	}
+  h2 {
+    color: white;
+  }
+}
+
+td {
+  font-size: 1.3em;
+  font-family: Cambria, sans-serif;
+}
+
+th {
+  font-size: 1.5em;
+}
+
+h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.7em;
+  font-family: Reeler Personal Use Only, Helvetica;
+}
+
+.caption h3 {
+    font-size: 4em;
+  }
+
+h2 {
+  font-size: 7em;
+  font-style: bold;
+  font-family: Montepetrum, Arial;
+}
+
+.pbig {
+  font-size: 3.4em;
+  font-family: Montepetrum, Arial;
+}
+
+p {
+  font-size: 2.4em;
+  font-family: Montepetrum, Arial;
+}
+
+h3 {
+    font-family: Montepetrum, Arial;
+    font-style: bold;
+    font-size: 6em;
+  }

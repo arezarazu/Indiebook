@@ -1,0 +1,30 @@
+<div class="jumbotron">
+  <br><br><br>
+  <h1>Book live gigs with great musicians</h1>
+  <h2>Discover local talents, venues and events</h2>
+</div>
+
+<div class="center">
+  <div class="row">
+    <% if(user_signed_in? == false) %>
+      <h4>Sign up to follow your favorite local musicians and promote their gigs!</h4>
+    <% else %>
+      <% @listings.each do |listing| %>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <%= link_to image_tag(listing.image), listing %>
+            <div class="caption">
+              <h3><%= listing.name %></h3>
+              <p><%= number_to_currency(listing.price) %></p>
+              <p><%= "Listed by #{listing.user.name}" %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>
+<br>
+<% if(user_signed_in?) %>
+  <%= link_to "New Listing", new_listing_path, class: "btn btn-link" %>
+<% end %>
